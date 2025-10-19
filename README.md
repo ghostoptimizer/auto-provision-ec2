@@ -8,23 +8,23 @@ I wanted a clean, repeatable way to bring up a server without clicking around or
 
 ---
 
-What this project does
+What this project does:
 
 Provisions an Ubuntu 22.04 EC2 instance with Terraform (default VPC).
 
-Uses cloud‑init on first boot to:
+- Uses cloud‑init on first boot to:
 
-update packages
+- update packages
 
-install Nginx
+- install Nginx
 
-write a simple HTML page
+- write a simple HTML page
 
-expose a /healthz endpoint
+- expose a /healthz endpoint
 
-Opens HTTP (80) to the world and optional SSH (22) from my IP only (/32).
+- Opens HTTP (80) to the world and optional SSH (22) from my IP only (/32).
 
-Prints outputs: public IP, public DNS, and a convenient http_url.
+- Prints outputs: public IP, public DNS, and a convenient http_url.
 
 ---
 
@@ -70,4 +70,4 @@ Real uses:
 - Build the habit: delete and recreate instead of hand‑fixing a broken box.
 
 Extra:
-If you'd like to see more on the project, check out my blog post on it and if this helped you out, awesome! If you’d do something differently, I’d love to hear it, ciao 👋
+Want to see more on how I tested this project? Check out my blog post at `www.jadonsblog.com`. Also if this helped you out in any way, awesome - if you’d do something differently, I’d love to hear it, ciao 👋

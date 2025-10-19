@@ -10,7 +10,7 @@ I wanted a clean, repeatable way to bring up a server without clicking around or
 
 What this project does:
 
-Provisions an Ubuntu 22.04 EC2 instance with Terraform (default VPC).
+- Provisions an Ubuntu 22.04 EC2 instance with Terraform (default VPC).
 
 - Uses cloud‑init on first boot to:
 

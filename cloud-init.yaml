@@ -1,0 +1,32 @@
+#cloud-config
+package_update: true
+
+packages:
+  - nginx
+
+write_files:
+  - path: /var/www/html/index.html
+    permissions: '0644'
+    owner: root:root
+    content: |
+      ${html}
+  - path: /etc/nginx/sites-available/default
+    permissions: '0644'
+    owner: root:root
+    content: |
+      server {
+        listen 80 default_server;
+        root /var/www/html;
+        index index.html;
+        server_name _;
+        location /healthz {
+          return 200 'ok';
+          add_header Content-Type text/plain;
+        }
+      }
+
+runcmd:
+  - systemctl enable nginx
+  - systemctl restart nginx
+
+final_message: "cloud-init: finished at $TIMESTAMP"

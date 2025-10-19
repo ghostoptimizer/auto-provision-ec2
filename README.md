@@ -2,10 +2,6 @@ A small, reproducible example that provisions an Ubuntu 22.04 EC2 instance with 
 
 ---
 
-What I learned building a tiny, repeatable server on AWS. If this helps you, awesome. If you’d do something differently, I’d love to hear it.
-
----
-
 Why I built this
 
 I wanted a clean, repeatable way to bring up a server without clicking around or SSH’ing to set things up. The target: one command to create it, one command to remove it, and a small check to prove it works.
@@ -74,4 +70,4 @@ Real uses:
 - Build the habit: delete and recreate instead of hand‑fixing a broken box.
 
 Extra:
-If you'd like to see more on the project internally check out my blog post on it and let me know what you'd add to the project or change, ciao 👋
+If you'd like to see more on the project, check out my blog post on it and if this helped you out, awesome! If you’d do something differently, I’d love to hear it, ciao 👋

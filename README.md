@@ -40,8 +40,10 @@ terraform destroy -auto-approve
 ```
 
 # Quick checks 
+```
 curl -i http://<your.IP>  
 curl -s http://<your.IP>/healthz
+```
 
 # Check if SSH is enabled
 ```
@@ -63,7 +65,7 @@ auto-provision-ec2/
 
 Real uses:
 
-- Launch a short‑lived server to try an idea. 
+- Launch a short‑lived server to try some ideas. 
 - Tear it down when you’re done.
 - Make sure your startup script works before baking a golden AMI.
 - Quick “is it up?” check at /healthz.
